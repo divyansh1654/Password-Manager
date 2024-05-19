@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+
+      <ul>
+        <li>Home</li>
+        <li>about</li>
+        <li>contact</li>
+      </ul>
+
+      <h1>Password Manager</h1>
+
+  </nav>
+
+  <div class="container">
+
+      <table class="tab">
+
+        <tr>
+          <td>Website</td>
+          <td>Username</td>
+          <td>Password</td>
+          <td>Action</td>
+        </tr>
+
+
+      </table>     
+
+    
+      
+        <div class="userinput">
+          <form id="passwordForm">
+            <h2>Website</h2>
+            <input type="text" id="website" required> 
+            <h2>Username</h2>
+            <input type="text" id="username" required> 
+            <h2>Password</h2>
+            <input type="password" id="password" required> 
+            <hr>
+            <button type="submit" class="but">Submit</button>
+            <button type="button" class="res" onclick="localStorage.clear()">Reset</button>
+          </form>
+     
+        
+      </div>
+  
+     
+      <h2 id="alert"> copied data</h2>
+
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
